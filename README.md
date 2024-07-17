@@ -14,6 +14,7 @@ to play the game the follwing are needed and that wa made as class
 4. Game: its a interface
 5. GameImpl: its a abstract class haivng minimal implementaion of the logics
 6. BottomLine,TopLine,MiddleLine, EarlyFive, HouseFull are gametype classes extends the above abstract class to have additional logic implentation of the game.
+   **Unit tests been convered for validator and Game engine alone, which will run multiple cases for the nerve of the program**
 class diagram given below
    
 <img width="1062" alt="image" src="https://github.com/user-attachments/assets/6ae62e49-155e-420c-8385-caaf9c6ef416">
@@ -32,4 +33,9 @@ main program does the following
 
    example output
    <img width="468" alt="image" src="https://github.com/user-attachments/assets/f14eab81-9d22-4f9d-ba7f-49e566be396b">
+
+Unit tests:
+<img width="382" alt="image" src="https://github.com/user-attachments/assets/2695b77e-225c-4c59-aa89-eabef123b076">
+<img width="378" alt="image" src="https://github.com/user-attachments/assets/9f45d4a1-fd6b-45b4-9eea-69c302cea78d">
+
 
