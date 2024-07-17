@@ -1,4 +1,4 @@
-package Tamola;
+package com.sahaj.tambola.GameEnngine;
 import java.util.List;
 
 public class Ticket {

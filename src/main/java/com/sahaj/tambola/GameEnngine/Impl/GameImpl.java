@@ -1,12 +1,13 @@
-package Tamola.Game.Impl;
+package com.sahaj.tambola.GameEnngine.Impl;
 
-import Tamola.Game.Game;
-import Tamola.Ticket;
+import com.sahaj.tambola.GameEnngine.Game;
+import com.sahaj.tambola.GameEnngine.Ticket;
+
 import java.util.List;
 
 public abstract class GameImpl implements Game {
     @Override
-    public boolean validateClaim(Ticket ticket, List<Integer> announcedNumbers,int order) {
+    public boolean validateClaim(Ticket ticket, List<Integer> announcedNumbers, int order) {
         List<Integer> line = ticket.getNumbers().get(order);
         for (Integer number : line) {
             if (number != null && !announcedNumbers.contains(number)) {

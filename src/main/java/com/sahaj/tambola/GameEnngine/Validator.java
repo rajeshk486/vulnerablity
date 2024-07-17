@@ -1,6 +1,7 @@
-package Tamola;
-import Tamola.Game.Game;
-import Tamola.Game.GameProcessor.Enum.SequenceName;
+package com.sahaj.tambola.GameEnngine;
+
+
+import com.sahaj.tambola.GameEnngine.GameProcessor.Enum.SequenceName;
 
 import java.util.List;
 

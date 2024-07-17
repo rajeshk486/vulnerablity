@@ -1,4 +1,4 @@
-package Tamola.Game.GameProcessor.Enum;
+package com.sahaj.tambola.GameEnngine.GameProcessor.Enum;
 
 public enum SequenceName {
     TOPLINE("Top Line",0),

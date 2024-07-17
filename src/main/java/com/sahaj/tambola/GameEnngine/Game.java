@@ -1,6 +1,4 @@
-package Tamola.Game;
-
-import Tamola.Ticket;
+package com.sahaj.tambola.GameEnngine;
 
 import java.util.List;
 
