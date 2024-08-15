@@ -5,16 +5,16 @@ import com.sahaj.tambola.GameEnngine.GameProcessor.*;
 import com.sahaj.tambola.GameEnngine.Player;
 import com.sahaj.tambola.GameEnngine.Ticket;
 import com.sahaj.tambola.GameEnngine.Validator;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @SpringBootApplication
 public class TambolaApplication {
-
+	private static final Logger logger = LogManager.getLogger(TambolaApplication.class);
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 //Tickets for player1
 		List<List<Integer>> ticketNumbers1 = new ArrayList<>();
@@ -65,6 +65,16 @@ public class TambolaApplication {
 			System.out.println(result.get());
 		}
 		executorService.shutdown();
+run();
+		SpringApplication.run(TambolaApplication.class, args);
 	}
-
+	public static void run() {
+		logger.debug("Debugging log");
+		logger.info("Info log");
+		logger.warn("Hey, This is a warning!");
+		logger.error("Oops! We have an Error. OK");
+		logger.fatal("Damn! Fatal error. Please fix me.");
+	}
 }
+
+
